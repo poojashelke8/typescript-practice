@@ -26,6 +26,7 @@ function Form() {
 
     const onSubmitform=()=>{
         console.log("formdata",formUser)
+        setFormUser(defaultval)
     }
   return (
     <div>
