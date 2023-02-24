@@ -28,6 +28,7 @@ function App() {
 
   return (
     <div className="App">
+      Hello world
       {/* -----Individual types------- */}
       {/* <Greet name='Pooja' messagecount={5} isloggedin={true} />  */}
 

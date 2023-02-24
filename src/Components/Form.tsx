@@ -30,6 +30,7 @@ function Form() {
     }
   return (
     <div>
+        In Form component<br></br>
         Username :<input 
             type="text" 
             value={formUser.name} 
