@@ -2,7 +2,11 @@ import './App.css';
 // import Greet from './Components/Greet';
 // import Greet2 from './Components/Greet2';
 // import User from './Components/User';
-import Form from './Components/Form';
+// import Form from './Components/Form';
+// import { ContextProvider } from './Components/Context/ThemeContext';
+// import Box from './Components/Context/Box';
+import { ContextProvider } from './Components/Context/ThemeContext';
+import User from './Components/User';
 
 function App() {
 // const PersonName = {
@@ -44,7 +48,15 @@ function App() {
         <Greet2>Hey greet2</Greet2>
       </Greet> */}
     {/* <User/> */}
-    <Form/>
+    {/* <Form/> */}
+
+    {/* <ContextProvider>
+      <Box/>
+    </ContextProvider> */}
+
+    <ContextProvider>
+      <User/>
+    </ContextProvider>
     </div>
   );
 }
