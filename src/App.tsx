@@ -1,12 +1,15 @@
+import { profile } from 'console';
 import './App.css';
 // import Greet from './Components/Greet';
 // import Greet2 from './Components/Greet2';
-// import User from './Components/User';
+// import User from './Components/Context/User';
 // import Form from './Components/Form';
 // import { ContextProvider } from './Components/Context/ThemeContext';
 // import Box from './Components/Context/Box';
-import { ContextProvider } from './Components/Context/ThemeContext';
-import User from './Components/User';
+// import { ContextProvider } from './Components/Context/ThemeContext';
+// import User from './Components/Basics/User';
+import Private from './Components/Componenet_prop/Private';
+import Profile from './Components/Componenet_prop/Profile';
 
 function App() {
 // const PersonName = {
@@ -54,9 +57,10 @@ function App() {
       <Box/>
     </ContextProvider> */}
 
-    <ContextProvider>
+    {/* <ContextProvider>
       <User/>
-    </ContextProvider>
+    </ContextProvider> */}
+    <Private isloggedin={true} component={Profile}/>
     </div>
   );
 }
